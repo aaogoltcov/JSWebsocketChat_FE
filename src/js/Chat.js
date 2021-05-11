@@ -11,9 +11,9 @@ export default class Chat {
     this.chatBody = document.querySelector('.direct-chat-messages');
     this.chatButton = document.querySelector('.btn-warning');
     this.chatInput = document.querySelector('.chat-input');
-    this.url = 'http://localhost:7070';
+    this.url = 'https://websocketchatbe.herokuapp.com';
     this.xhr = new XMLHttpRequest();
-    this.ws = new WebSocket('ws://localhost:7070/ws');
+    this.ws = new WebSocket('ws://websocketchatbe.herokuapp.com/ws');
     this.ws.binaryType = 'blob';
   }
 
