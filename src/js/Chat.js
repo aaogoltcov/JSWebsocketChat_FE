@@ -13,7 +13,7 @@ export default class Chat {
     this.chatInput = document.querySelector('.chat-input');
     this.url = 'https://websocketchatbe.herokuapp.com';
     this.xhr = new XMLHttpRequest();
-    this.ws = new WebSocket('ws://websocketchatbe.herokuapp.com/ws');
+    this.ws = new WebSocket('ws://websocketchatbe.herokuapp.com');
     this.ws.binaryType = 'blob';
   }
 
