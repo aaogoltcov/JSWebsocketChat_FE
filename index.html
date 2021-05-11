@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Websocket Chat</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <div class="page-content page-container" id="page-content">
+    <div class="padding">
+      <div class="row container d-flex justify-content-center">
+        <div class="col-md-4">
+
+          <div class="form hidden">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Nickname</label>
+                <input type="name" class="form-control" id="inputName" aria-describedby="nicknameHelp" placeholder="Enter your nickname" required>
+                <small id="nicknameHelp" class="form-text text-muted">We'll never share your nickname with anyone else</small>
+              </div>
+              <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+          </div>
+
+
+          <div class="box box-warning direct-chat direct-chat-warning hidden">
+            <div class="box-header with-border">
+              <h3 class="box-title">Chat Messages</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts"> <i class="fa fa-comments"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i> </button>
+              </div>
+            </div>
+
+            <div class="box-body"><div class="direct-chat-messages"></div></div>
+
+            <div class="box-footer">
+              <form action="#" method="post">
+                <div class="input-group">
+                  <input type="text" name="message" placeholder="Type Message ..." class="form-control chat-input">
+                  <span class="input-group-btn"><button type="submit" class="btn btn-warning btn-flat">Send</button> </span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
